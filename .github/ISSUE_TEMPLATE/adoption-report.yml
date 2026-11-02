@@ -1,0 +1,25 @@
+name: Adoption report
+description: Report ambiguity, useful outcomes, or friction from a bounded review.
+title: '[Adoption] '
+body:
+  - type: input
+    id: scope
+    attributes:
+      label: Standard version and review scope
+      description: Use a public-safe description. Do not include restricted evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What decision did the standard help or hinder
+      description: Separate observed results, inference, and suggestions. Name affected requirement IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Evidence, limitations, and suggested improvement
+      description: Describe source access limits and overhead. A checklist pass is not a conformance assessment.
+    validations:
+      required: true

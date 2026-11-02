@@ -1,0 +1,178 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "id": "EX-CLAIM-001",
+    "synthetic": true,
+    "statement": "Synthetic example: zero cross-tenant disclosures were recorded in the specified 400-request test on fixture-v1.",
+    "claim_class": "DEMONSTRATED",
+    "truth_status": "SUPPORTED",
+    "deployment_status": "PROTOTYPE",
+    "scope": {
+      "system": "synthetic-tenant-boundary-fixture",
+      "environment": "isolated-test",
+      "version": "fixture-v1",
+      "population": "Four synthetic tenants; two roles; 400 specified requests",
+      "time_window": "2026-10-27T10:00:00Z/2026-10-27T10:15:00Z",
+      "conditions": [
+        "No real customers, credentials, network calls, or application instance."
+      ],
+      "exclusions": [
+        "No claim of complete tenant isolation or actual product behavior."
+      ]
+    },
+    "owner": "synthetic-example-maintainer",
+    "as_of": "2026-10-27T12:00:00Z",
+    "review_by": "2026-11-27",
+    "evidence_ids": [
+      "EX-EVID-001"
+    ],
+    "conflicting_evidence_ids": [],
+    "limitations": [
+      "Synthetic example: no real test or operating capability is asserted."
+    ],
+    "verification": {
+      "method": "Illustrative test specification; record states a fictional result to exercise the validator.",
+      "acceptance": "The scoped fictional run records no cross-tenant disclosures in 400 specified requests.",
+      "actual_result": "Synthetic scenario: zero disclosures recorded in 400 specified requests.",
+      "reproduction": "Load the included JSON fixtures; this reproduces record validation, not the imagined system test.",
+      "execution_status": "EXECUTED"
+    },
+    "operational": false,
+    "authority": null,
+    "authority_not_applicable_reason": "This is a static synthetic record, not permission to interact with any application.",
+    "usage": {
+      "customer_promise": false,
+      "production_dependency": false,
+      "research_only": false
+    },
+    "classification_rationale": "The labels describe a hypothetical bounded example, not a real-world result.",
+    "decision_history": [
+      {
+        "at": "2026-10-27T12:00:00Z",
+        "from_class": null,
+        "to_class": "DEMONSTRATED",
+        "reason": "Created a clearly labeled synthetic example.",
+        "evidence_ids": [
+          "EX-EVID-001"
+        ],
+        "decider": "synthetic-example-maintainer"
+      }
+    ]
+  },
+  {
+    "schema_version": "0.1.0",
+    "id": "EX-CLAIM-002",
+    "synthetic": true,
+    "statement": "Synthetic example: an export manifest is proposed to record schema versions and omitted categories.",
+    "claim_class": "PROPOSED",
+    "truth_status": "SUPPORTED",
+    "deployment_status": "CONCEPT",
+    "scope": {
+      "system": "synthetic-portability-proposal",
+      "environment": "design-review",
+      "version": "proposal-v1",
+      "population": "Proposed export contract only",
+      "time_window": "2026-10-27 design review",
+      "conditions": [
+        "Proposed design only."
+      ],
+      "exclusions": [
+        "No implementation, complete portability, restore, or commercial availability claim."
+      ]
+    },
+    "owner": "synthetic-example-maintainer",
+    "as_of": "2026-10-27T12:00:00Z",
+    "review_by": "2026-11-27",
+    "evidence_ids": [
+      "EX-EVID-002"
+    ],
+    "conflicting_evidence_ids": [],
+    "limitations": [
+      "Synthetic example: no real test or operating capability is asserted."
+    ],
+    "verification": {
+      "method": "Inspect the proposed manifest fields and design rationale.",
+      "acceptance": "A future implementation must be tested for completeness and independent restoration.",
+      "actual_result": null,
+      "reproduction": null,
+      "execution_status": "NOT_EXECUTED"
+    },
+    "operational": false,
+    "authority": null,
+    "authority_not_applicable_reason": "This is a static synthetic record, not permission to interact with any application.",
+    "usage": {
+      "customer_promise": false,
+      "production_dependency": false,
+      "research_only": false
+    },
+    "classification_rationale": "Supported applies only to the hypothetical design rationale; implementation and operational outcomes are separate unverified claims.",
+    "decision_history": [
+      {
+        "at": "2026-10-27T12:00:00Z",
+        "from_class": null,
+        "to_class": "PROPOSED",
+        "reason": "Created a clearly labeled synthetic example.",
+        "evidence_ids": [
+          "EX-EVID-002"
+        ],
+        "decider": "synthetic-example-maintainer"
+      }
+    ]
+  },
+  {
+    "schema_version": "0.1.0",
+    "id": "EX-CLAIM-003",
+    "synthetic": true,
+    "statement": "Fictional scenario: a machine ecosystem constructs its complete computing supply chain from unrefined matter.",
+    "claim_class": "SPECULATIVE",
+    "truth_status": "UNVERIFIED",
+    "deployment_status": "NOT_APPLICABLE",
+    "scope": {
+      "system": "synthetic-speculative-archive",
+      "environment": "fiction",
+      "version": null,
+      "population": "Imagined scenario",
+      "time_window": "Undated fictional future",
+      "conditions": [
+        "Imaginative scenario only."
+      ],
+      "exclusions": [
+        "No deployment, physical feasibility, funding, or delivery promise."
+      ]
+    },
+    "owner": "synthetic-example-maintainer",
+    "as_of": "2026-10-27T12:00:00Z",
+    "review_by": "2026-11-27",
+    "evidence_ids": [],
+    "conflicting_evidence_ids": [],
+    "limitations": [
+      "Synthetic example: no real test or operating capability is asserted."
+    ],
+    "verification": {
+      "method": "No empirical implementation method is established in this example.",
+      "acceptance": "Any future engineering proposal must decompose the claim and identify inputs, constraints, and evidence.",
+      "actual_result": null,
+      "reproduction": null,
+      "execution_status": "NOT_EXECUTED"
+    },
+    "operational": false,
+    "authority": null,
+    "authority_not_applicable_reason": "This is a static synthetic record, not permission to interact with any application.",
+    "usage": {
+      "customer_promise": false,
+      "production_dependency": false,
+      "research_only": true
+    },
+    "classification_rationale": "This is an archived imaginative scenario; it has no operating authority or established implementation claim.",
+    "decision_history": [
+      {
+        "at": "2026-10-27T12:00:00Z",
+        "from_class": null,
+        "to_class": "SPECULATIVE",
+        "reason": "Created a clearly labeled synthetic example.",
+        "evidence_ids": [],
+        "decider": "synthetic-example-maintainer"
+      }
+    ]
+  }
+]

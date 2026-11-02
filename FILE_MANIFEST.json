@@ -1,0 +1,256 @@
+{
+  "algorithm": "sha256",
+  "scope": "Source files; excludes itself, Git metadata, local environments and generated verification output.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 100,
+      "sha256": "2348c123826d3291b18995df15919b00c3ac4fed610e87ce1251818c3ec37144"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/adoption-report.yml",
+      "bytes": 868,
+      "sha256": "43d2e1a931e9c77986623f96e281d659e86e8f600245e1ef781d995a6bb74ed0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/change-proposal.yml",
+      "bytes": 1159,
+      "sha256": "a3db8c57fba53234f33db110d0004ea418aa8735e4ff72dc3d2629a0aed5d02a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/correction.yml",
+      "bytes": 781,
+      "sha256": "b0208c4fdee9983a40e3752ee83ad4c7c757f9a9e7b85425ce6cd7f39cac03b9"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 436,
+      "sha256": "07c59a6e0e3f631cac68bee43e928f370e3a5e442e249b429df84c9dd222d325"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1297,
+      "sha256": "9768929e0570657864eef2683be129d0f2cb47cdc44923a54ba5f3d473faf9f4"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 162,
+      "sha256": "c1947d2b871b3b237147cb528a8cb1d3ec77a7c8ee2e42b5410bd9f0370846a9"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1458,
+      "sha256": "2db46cc388f8aa15f30599de63f5b0249392805364c4a78a61c3f07a208217aa"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2552,
+      "sha256": "b1c4b9f710b49199bf5993e8cde8b19246ad94d2caed15051c95cb4f4fa2e309"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1669,
+      "sha256": "954e5a3afa976a3f0b5525f4b246798fc61a4d3bc8baad8c47227150acee29b8"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "bytes": 4396,
+      "sha256": "27b2d81700adf0bf22e8d6980e2f86998706cfa2c428429498b743929537390e"
+    },
+    {
+      "path": "LICENSING.md",
+      "bytes": 2332,
+      "sha256": "6b67fecd41577af28e70141245bf7411dcb14950ae081cfd484b30b9590e9270"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5357,
+      "sha256": "090cd1d324919aefdb1ed095ab6bfdfbc4fc16a9cdcb3c44d267c283ff44d66a"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 1793,
+      "sha256": "37156a4a66fdc5e2f1119cbbb46011cf8c09ad555401311657b4184fe0b4b513"
+    },
+    {
+      "path": "docs/APPLICABILITY.md",
+      "bytes": 2199,
+      "sha256": "e7058a4a576ba5668233cf1b405125482d06837ca390ff98c455887aba9a1344"
+    },
+    {
+      "path": "docs/BOUNDARY_EXAMPLES.md",
+      "bytes": 10647,
+      "sha256": "47a4b3f33c66efc736633a91b5d7e6791fd2252f8b6f284491b4b935ab0718f5"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "bytes": 4117,
+      "sha256": "1af86dd15cbaa1c99e1dd318fa7e149f8b1745333ca9872661bc4563e6e0b503"
+    },
+    {
+      "path": "docs/EXPLORER.md",
+      "bytes": 1281,
+      "sha256": "494de9433f41f96be1d590675408bac9d9901cf9722373b371dd33e7151a204e"
+    },
+    {
+      "path": "docs/GETTING_STARTED.md",
+      "bytes": 3997,
+      "sha256": "60c7c403d12e6428712fd3f896c0aca821ad0b41c970da2fd94ae60098f0a051"
+    },
+    {
+      "path": "docs/LOCAL_VALIDATION.json",
+      "bytes": 1799,
+      "sha256": "a9ffaed0ff17caec7f8c4b46320bbe23879d345ecaa9431f72096324370cb9c8"
+    },
+    {
+      "path": "docs/PREPARATION_VERIFICATION.md",
+      "bytes": 3410,
+      "sha256": "b7474c0c4d5b5670e0879dfe47671d995b5cc26b0481e12d916b3ddbfd630eea"
+    },
+    {
+      "path": "docs/PUBLICATION.md",
+      "bytes": 5326,
+      "sha256": "ae29d5d3fb9be6a757be03232ee9543fc506925157d9bd58d14a9ec4956a6296"
+    },
+    {
+      "path": "docs/VALIDATOR.md",
+      "bytes": 11139,
+      "sha256": "1734316450fdcafaa5ea65648fd4139952e452e0534808231153c72bca567f8e"
+    },
+    {
+      "path": "docs/VERIFICATION.json",
+      "bytes": 2316,
+      "sha256": "7138f521f4a4768ac1de560f63f9446f474ceae598a6bade9e0229643801b374"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 4798,
+      "sha256": "4394cf1d428aa7c8945cabb52bab5229a6820019d384d6732f8230fca644ce1c"
+    },
+    {
+      "path": "docs/explorer.html",
+      "bytes": 70863,
+      "sha256": "142f1ef061c3ba2c92db0024e9bc6ea92475b2fcecab2cb05dc8e664d28f7df5"
+    },
+    {
+      "path": "examples/claims.json",
+      "bytes": 6607,
+      "sha256": "cee2a1c1ee6932b9b69c9daae59fad152137d94d35935d37870b24cc417828ac"
+    },
+    {
+      "path": "examples/evidence.json",
+      "bytes": 3631,
+      "sha256": "8e9a154da326a55e9175460176bc40ff3d5f4b36b9e31d4a7df91425ab2f3f88"
+    },
+    {
+      "path": "examples/release-review/README.md",
+      "bytes": 3390,
+      "sha256": "05e3e11a4e476b261ee1c14c9dc5ad9944ab2f20d04872186a591ad71e95c373"
+    },
+    {
+      "path": "prompts/maintain-and-release-standard.md",
+      "bytes": 6348,
+      "sha256": "78427065c4b9faa41edb8133362322d3796a8e2a4376e2816beb78a871fd836c"
+    },
+    {
+      "path": "release-manifest.json",
+      "bytes": 1267,
+      "sha256": "bddca7585ab3d11de2920d4a32e4079ee283b26f0d76781ca8a2e4f080ddfb72"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 96,
+      "sha256": "129488248b3c9ae3bf35c562f0b177f7d43ca2d93146476ad8e697245a32a78a"
+    },
+    {
+      "path": "schemas/claim.schema.json",
+      "bytes": 9757,
+      "sha256": "9c0e521090043035d30c955152673aa175c4c3fa54f73dae8ed04d4099fa7f07"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "bytes": 6929,
+      "sha256": "31dbb10f05770121dadbebfbdd8b64405268a20f31fd96264b0ee3d6936f3791"
+    },
+    {
+      "path": "standard/CONFORMANCE.md",
+      "bytes": 15165,
+      "sha256": "c5d093db0ae05038265f512efc326dcc911144fd3eacffc28146474ddfa12940"
+    },
+    {
+      "path": "standard/STANDARD.md",
+      "bytes": 50352,
+      "sha256": "708b5ed9cd5f595b2438ed911318c7ed79701d7270f95137595fc9a858232e18"
+    },
+    {
+      "path": "standard/requirements.json",
+      "bytes": 69511,
+      "sha256": "64ce5223de68324bc7bc52383aea28f5a23af2fcbaaccc2382492069c692d958"
+    },
+    {
+      "path": "templates/claim-record.md",
+      "bytes": 7750,
+      "sha256": "f2c88ca40fca80b7eb96fc632c2884d8d1f40640a0f808c930b364d887f5cfeb"
+    },
+    {
+      "path": "templates/conformance-assessment.md",
+      "bytes": 1916,
+      "sha256": "b6a3912ed8e937affddc21b1164b12b038aec70c0e86c1e98165960bafd77b3e"
+    },
+    {
+      "path": "templates/experiment-record.md",
+      "bytes": 2004,
+      "sha256": "d166c354f6f6267d6fbd993c1e65e6158878e515c2fd6360fb1a37511a74f747"
+    },
+    {
+      "path": "templates/repository-instructions-addon.md",
+      "bytes": 2170,
+      "sha256": "5fee31e82b8290fe895c7d57d4edc7074ee273eb1d5402871eee33bc19e0a222"
+    },
+    {
+      "path": "tests/test_repository_tools.py",
+      "bytes": 6229,
+      "sha256": "903efc3122f9bd60788d4b9a8cf682002bfe416db84af93a20bed6fe93f51883"
+    },
+    {
+      "path": "tests/test_schema_contract.py",
+      "bytes": 2532,
+      "sha256": "e80e7ef3a9c8f4aabbdfe4217c9b2f3c8607a7547776fd34d4c016d3a50087d3"
+    },
+    {
+      "path": "tests/test_validate_records.py",
+      "bytes": 18288,
+      "sha256": "07fcd50eb1f73745a9076a34a1d1f51cfbac5b9bb6935d1d6dd4261db57e4416"
+    },
+    {
+      "path": "tools/build_catalog.py",
+      "bytes": 4310,
+      "sha256": "0ddbff6b727b4038d2b2d1148f7c465691cf5cc677ae3b43588ec2d289cb7124"
+    },
+    {
+      "path": "tools/check_repository.py",
+      "bytes": 4328,
+      "sha256": "e6c1363681e80782a4a57e85c5fb28767ae93d83bac5340b99bfb8f9a5aea77e"
+    },
+    {
+      "path": "tools/check_schemas.py",
+      "bytes": 2332,
+      "sha256": "5913167fd92af8b9ae2cec775d39ed8927a0ed4cbc60e5730f882cb66a09f134"
+    },
+    {
+      "path": "tools/explorer.template.html",
+      "bytes": 9810,
+      "sha256": "31aca20627fc6ac42e12def5e7a59272758af592b72f2bcde5e599bf5c1b8f5e"
+    },
+    {
+      "path": "tools/new_assessment.py",
+      "bytes": 2170,
+      "sha256": "956c293a564d2e8e1fb4622ae9478d9e8f27f18dcc70a9fdfe5b3f66e71a82a8"
+    },
+    {
+      "path": "tools/validate_records.py",
+      "bytes": 23246,
+      "sha256": "aa1554a1f0d7112a6964a096f639d9de155a3cafd0df6344587397fedb365f7f"
+    }
+  ]
+}

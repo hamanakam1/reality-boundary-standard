@@ -1,0 +1,37 @@
+{
+  "standard_id": "RBS",
+  "version": "0.1.0-draft",
+  "prepared_on": "2026-10-27",
+  "status": "DRAFT_FOR_REVIEW",
+  "public_repository": {
+    "proposed_name": "reality-boundary-standard",
+    "owner": "hamanakam1",
+    "proposed_visibility": "public",
+    "observed_url": "https://github.com/hamanakam1/reality-boundary-standard",
+    "published_commit": null,
+    "observed_visibility": "public",
+    "observed_empty_on": "2026-11-01"
+  },
+  "maintainers": [],
+  "license_status": "LICENSE_DECISION_PENDING",
+  "publication_status": "LOCAL_CANDIDATE_NOT_PUSHED",
+  "full_conformance": "NOT_ASSESSED",
+  "synthetic_examples": true,
+  "private_engagement_artifacts_included": false,
+  "verification_report": "docs/VERIFICATION.md",
+  "pending_publication_inputs": [
+    "rights holder confirmation",
+    "license selection and scope"
+  ],
+  "file_hash_manifest": "FILE_MANIFEST.json",
+  "candidate_revision": "2026-11-01-repository-foundation",
+  "validator_version": "0.1.1",
+  "verified_on": "2026-11-01",
+  "initial_contact": {
+    "github": "hamanakam1",
+    "role": "repository owner; no additional maintainers appointed",
+    "route": "repository issues and pull requests after publication"
+  },
+  "rights_holder": null,
+  "record_schema_version": "0.1.0"
+}

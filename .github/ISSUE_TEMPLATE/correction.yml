@@ -1,0 +1,22 @@
+name: Correction or tooling defect
+description: Report misleading wording, a broken reference, or a reproducible tool failure.
+title: '[Correction] '
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Exact version, file, and requirement ID if relevant
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem, expected result, and reproduction
+      description: Supply a minimal synthetic record if needed. Do not include private evidence or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: basis
+    attributes:
+      label: Supporting source or proposed correction
+      description: Prefer primary sources for factual assertions. State source versions, scope, and limitations.

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Search the Reality Boundary Standard's 118 requirements. Works offline; no accounts or external assets.">
+<title>RBS / Requirement explorer</title>
+<style>
+:root{--bg:#f4f2eb;--paper:#fffdf7;--ink:#212c2a;--muted:#5d6c66;--line:#ccd1c6;--accent:#176b56;--soft:#e3ebe2;font-family:ui-sans-serif,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+*{box-sizing:border-box}body{margin:0}a{color:var(--accent);text-underline-offset:3px}button,input,select{font:inherit}button,a,input,select{outline-offset:4px}header,main,footer{max-width:1200px;margin:auto;padding:24px 32px}header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}.wordmark{font:700 22px ui-monospace,monospace;letter-spacing:-1px}.wordmark span{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:22px;font-size:14px}h1{font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-2px;font-weight:550;margin:18px 0}h1 span{color:var(--accent)}.intro{display:grid;grid-template-columns:1fr 300px;gap:45px;margin-bottom:26px}.intro p{line-height:1.65;max-width:650px;margin:14px 0}.eyebrow,.tag{font:12px ui-monospace,monospace;letter-spacing:.07em;text-transform:uppercase}.eyebrow{color:var(--muted)}.boundary{border-left:3px solid var(--accent);align-self:center;padding-left:20px;font-size:14px}.boundary strong{display:block;margin-bottom:8px}.controls{display:grid;grid-template-columns:1fr 260px 185px auto;gap:12px;align-items:end;padding:20px 0;border-top:1px solid var(--line)}label{display:block;font-size:12px;font-weight:650;margin-bottom:7px}input,select{width:100%;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:11px;min-height:44px}button{cursor:pointer;min-height:44px;padding:10px 17px;border:1px solid var(--line);border-radius:4px;color:var(--ink);background:var(--paper)}button:hover{background:var(--soft)}.status{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px;margin:4px 0 18px}.grid{display:grid;grid-template-columns:360px 1fr;border:1px solid var(--line);background:var(--paper);height:490px;border-radius:6px;overflow:hidden}.list{overflow:auto;border-right:1px solid var(--line);padding:8px}.list button{display:block;width:100%;text-align:left;border:0;border-radius:3px;padding:13px;min-height:65px;background:transparent}.list button[aria-pressed=true]{background:var(--soft);box-shadow:inset 3px 0 var(--accent)}.list button:hover{background:var(--soft)}.list code{font-weight:700;font-size:13px}.list small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.detail{overflow:auto;padding:28px 32px}.detail h2{font:550 32px ui-monospace,monospace;letter-spacing:-1px;margin:18px 0 8px}.section{font-size:14px;color:var(--muted);margin:0 0 24px}.requirement{font-size:18px;line-height:1.8;max-width:700px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.tag{padding:6px 9px;background:var(--soft);letter-spacing:0}.note{border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--muted);line-height:1.6}.empty{padding:20px;color:var(--muted)}footer{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:25px;padding-top:8px;padding-bottom:22px}noscript p{padding:30px}kbd{font:12px ui-monospace,monospace;border:1px solid var(--line);padding:2px 5px;border-radius:3px}
+@media(prefers-color-scheme:dark){:root{--bg:#17201e;--paper:#1e2925;--ink:#e4e9de;--muted:#b1bdb3;--line:#415349;--accent:#95d4b2;--soft:#2d4237}}
+@media(max-width:900px){.controls{grid-template-columns:1fr 1fr}.intro{grid-template-columns:1fr;gap:4px}.boundary{max-width:650px}.grid{grid-template-columns:285px 1fr}.detail{padding:22px}.requirement{font-size:16px}.intro p{margin-bottom:20px}}
+@media(max-width:600px){header,main,footer{padding:20px}header{align-items:flex-start}.wordmark{font-size:18px}nav{gap:12px;font-size:12px}.controls{grid-template-columns:1fr}.grid{grid-template-columns:1fr;height:auto}.list{max-height:220px;border-right:0;border-bottom:1px solid var(--line)}.detail{min-height:390px}.status,footer{flex-direction:column;gap:8px}h1{letter-spacing:-1px}.hint{display:none}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wordmark">RBS<span> /</span></div><nav aria-label="Primary"><a href="../standard/STANDARD.md">Standard</a><a href="../standard/CONFORMANCE.md">Conformance</a><a href="GETTING_STARTED.md">Get started</a></nav></header>
+<main>
+<div class="intro"><div><p class="eyebrow">Reality Boundary Standard / 0.1.0-draft</p><h1>Make the claim.<br><span>Show its boundary.</span></h1><p>Find the requirement behind a technical claim, an experiment, or an operating decision. Every result links back to the normative source.</p></div><aside class="boundary"><strong>A reading tool, with a clear limit.</strong>118 requirements. No certification score. Search and keyword filters help you navigate; they do not decide applicability or conformance.</aside></div>
+<form id="filters" role="search"><div class="controls"><div><label for="query">Search text or requirement ID</label><input id="query" type="search" placeholder="e.g. evidence, rollback, RBS-CLS-01" autocomplete="off"></div><div><label for="section">Section</label><select id="section"><option value="">All sections</option></select></div><div><label for="keyword">Contains keyword</label><select id="keyword"><option value="">Any keyword</option><option>MUST</option><option>MUST NOT</option><option>SHOULD</option><option>SHOULD NOT</option><option>MAY</option></select></div><button type="reset">Reset</button></div></form>
+<div class="status"><span id="count" role="status" aria-live="polite"></span><span class="hint"><kbd>/</kbd> Search &nbsp; <kbd>Esc</kbd> Clear search</span></div>
+<div class="grid"><div id="list" class="list" role="group" aria-label="Matching requirements"></div><article id="detail" class="detail" aria-label="Selected requirement"></article></div>
+<noscript><p>Enable JavaScript for local search, or <a href="../standard/STANDARD.md">read the complete standard</a>.</p></noscript>
+</main><footer><span>Informative, generated from STANDARD.md. The normative text controls.</span><span>Local search · No network requests · No saved assessment data</span></footer>
+<script id="catalog" type="application/json">__RBS_CATALOG__</script>
+<script>
+"use strict";
+const data=JSON.parse(document.getElementById('catalog').textContent),rows=data.requirements;
+const query=document.getElementById('query'),section=document.getElementById('section'),keyword=document.getElementById('keyword'),list=document.getElementById('list'),detail=document.getElementById('detail'),count=document.getElementById('count');
+let selected=null;
+for(const name of new Set(rows.map(r=>r.section))){const o=document.createElement('option');o.value=name;o.textContent=name;section.append(o)}
+function element(tag,text,className){const el=document.createElement(tag);el.textContent=text;if(className)el.className=className;return el}
+function show(row){
+ selected=row.id;
+ for(const b of list.querySelectorAll('button'))b.setAttribute('aria-pressed',String(b.dataset.id===selected));
+ const link=element('a','Read source paragraph →');link.href='../standard/STANDARD.md#'+row.anchor;
+ const tags=element('div','','tags');for(const k of row.keywords)tags.append(element('span',k,'tag'));
+ detail.replaceChildren(element('span','Normative requirement / '+data.standard_version,'eyebrow'),element('h2',row.id),element('p',row.section,'section'),element('p',row.text.replace(/\*\*/g,''),'requirement'),tags,link,element('p','Review applicability, evidence, and exceptions in the conformance procedure. A keyword match is not a review result.','note'));
+ // Store only an identifier in the URL, never a claim or assessment payload.
+ try{history.replaceState(null,'','#'+row.id)}catch(e){}
+}
+function render(){
+ const terms=query.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+ const matching=rows.filter(r=>(!section.value||r.section===section.value)&&(!keyword.value||r.keywords.includes(keyword.value))&&terms.every(t=>(r.id+' '+r.section+' '+r.text).toLowerCase().includes(t)));
+ list.replaceChildren();count.textContent=matching.length+' of '+rows.length+' requirements';
+ for(const r of matching){const b=element('button','');b.type='button';b.dataset.id=r.id;b.setAttribute('aria-pressed','false');b.append(element('code',r.id),element('small',r.section));b.addEventListener('click',()=>show(r));list.append(b)}
+ if(matching.length)show(matching.find(r=>r.id===selected)||matching[0]);
+ else{selected=null;list.append(element('p','No requirements match.','empty'));detail.replaceChildren(element('h2','No matches'),element('p','Try a shorter search, another section, or reset the filters.','note'))}
+}
+document.getElementById('filters').addEventListener('submit',e=>e.preventDefault());
+query.addEventListener('input',render);section.addEventListener('change',render);keyword.addEventListener('change',render);
+document.getElementById('filters').addEventListener('reset',()=>{query.value='';section.value='';keyword.value='';selected=null;render()});
+document.addEventListener('keydown',e=>{const editing=/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);if(e.key==='/'&&!editing){e.preventDefault();query.focus()}if(e.key==='Escape'&&document.activeElement===query){query.value='';render()}});
+const fragment=location.hash.slice(1);if(rows.some(r=>r.id===fragment))selected=fragment;
+render();
+</script>
+</body>
+</html>

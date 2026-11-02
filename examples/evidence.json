@@ -1,0 +1,108 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "id": "EX-EVID-001",
+    "synthetic": true,
+    "title": "Synthetic bounded-zero test result example",
+    "source_type": "SYNTHETIC_FIXTURE",
+    "source": {
+      "uri": "synthetic://rbs-fixtures/EX-EVID-001",
+      "access": "SYNTHETIC",
+      "review": {
+        "status": "SELF_REVIEWED",
+        "reviewer": "synthetic-example-maintainer",
+        "reviewed_at": "2026-10-27T11:00:00Z",
+        "scope": "Review of example record construction only.",
+        "limitations": [
+          "No underlying application or test run exists."
+        ]
+      }
+    },
+    "collected_at": "2026-10-27T10:15:00Z",
+    "review_by": "2026-11-27",
+    "scope": {
+      "system": "synthetic-tenant-boundary-fixture",
+      "environment": "isolated-test",
+      "version": "fixture-v1",
+      "population": "Four synthetic tenants; two roles; 400 specified requests",
+      "time_window": "2026-10-27T10:00:00Z/2026-10-27T10:15:00Z",
+      "conditions": [
+        "No real customers, credentials, network calls, or application instance."
+      ],
+      "exclusions": [
+        "No claim of complete tenant isolation or actual product behavior."
+      ]
+    },
+    "method": "Hand-authored synthetic fixture; no empirical collection.",
+    "summary": "Fictional 400-request zero-event result used to show that bounded-zero wording is permitted.",
+    "artifact_digest": null,
+    "supports_claim_ids": [
+      "EX-CLAIM-001"
+    ],
+    "contradicts_claim_ids": [],
+    "transformations": [
+      "Constructed as synthetic data."
+    ],
+    "limitations": [
+      "No factual, security, or deployment conclusion may be drawn from this fixture."
+    ],
+    "provenance": {
+      "collector": "synthetic-example-maintainer",
+      "origin": "hand-authored synthetic fixture",
+      "independence_group": "synthetic-fixture-set-1"
+    }
+  },
+  {
+    "schema_version": "0.1.0",
+    "id": "EX-EVID-002",
+    "synthetic": true,
+    "title": "Synthetic design-rationale review",
+    "source_type": "SYNTHETIC_FIXTURE",
+    "source": {
+      "uri": "synthetic://rbs-fixtures/EX-EVID-002",
+      "access": "SYNTHETIC",
+      "review": {
+        "status": "SELF_REVIEWED",
+        "reviewer": "synthetic-example-maintainer",
+        "reviewed_at": "2026-10-27T11:00:00Z",
+        "scope": "Review of example record construction only.",
+        "limitations": [
+          "No underlying application or test run exists."
+        ]
+      }
+    },
+    "collected_at": "2026-10-27T10:15:00Z",
+    "review_by": "2026-11-27",
+    "scope": {
+      "system": "synthetic-portability-proposal",
+      "environment": "design-review",
+      "version": "proposal-v1",
+      "population": "Proposed export contract only",
+      "time_window": "2026-10-27 design review",
+      "conditions": [
+        "Proposed design only."
+      ],
+      "exclusions": [
+        "No implementation, complete portability, restore, or commercial availability claim."
+      ]
+    },
+    "method": "Hand-authored design-review fixture.",
+    "summary": "The fictional proposal includes schema version and omission fields; no implementation is claimed.",
+    "artifact_digest": null,
+    "supports_claim_ids": [
+      "EX-CLAIM-002"
+    ],
+    "contradicts_claim_ids": [],
+    "transformations": [
+      "Constructed as synthetic data."
+    ],
+    "limitations": [
+      "No factual, security, or deployment conclusion may be drawn from this fixture."
+    ],
+    "provenance": {
+      "collector": "synthetic-example-maintainer",
+      "origin": "hand-authored synthetic fixture",
+      "independence_group": "synthetic-fixture-set-1"
+    }
+  }
+]

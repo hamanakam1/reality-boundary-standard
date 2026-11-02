@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+private/
+client-data/
+raw-evidence/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.artifacts/
+output/
+.playwright-cli/
+.pytest_cache/

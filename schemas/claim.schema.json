@@ -1,0 +1,402 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:rbs:schema:claim:0.1.0",
+  "title": "RBS Claim Record Array 0.1.0",
+  "description": "Structural format only. Schema validation does not establish factual accuracy, declared-policy validity, or full RBS conformance.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "schema_version": {
+        "type": "string",
+        "const": "0.1.0"
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "synthetic": {
+        "type": "boolean"
+      },
+      "statement": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "claim_class": {
+        "type": "string",
+        "enum": [
+          "OBSERVED",
+          "DEMONSTRATED",
+          "PROPOSED",
+          "RESEARCH",
+          "SPECULATIVE",
+          "UNKNOWN"
+        ]
+      },
+      "truth_status": {
+        "type": "string",
+        "enum": [
+          "SUPPORTED",
+          "UNVERIFIED",
+          "DISPUTED",
+          "CONTRADICTED"
+        ]
+      },
+      "deployment_status": {
+        "type": "string",
+        "enum": [
+          "NOT_APPLICABLE",
+          "CONCEPT",
+          "PROTOTYPE",
+          "PILOT",
+          "PRODUCTION",
+          "RETIRED"
+        ]
+      },
+      "scope": {
+        "$ref": "#/$defs/scope"
+      },
+      "owner": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "as_of": {
+        "type": "string",
+        "format": "date-time",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+      },
+      "review_by": {
+        "type": "string",
+        "format": "date",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      },
+      "evidence_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "uniqueItems": true
+      },
+      "conflicting_evidence_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "uniqueItems": true
+      },
+      "limitations": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "uniqueItems": true,
+        "minItems": 1
+      },
+      "verification": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "acceptance": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "actual_result": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reproduction": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "execution_status": {
+            "type": "string",
+            "enum": [
+              "NOT_EXECUTED",
+              "EXECUTED"
+            ]
+          }
+        },
+        "required": [
+          "method",
+          "acceptance",
+          "actual_result",
+          "reproduction",
+          "execution_status"
+        ],
+        "additionalProperties": false
+      },
+      "operational": {
+        "type": "boolean"
+      },
+      "authority": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "actions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              },
+              "actor": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "budget": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "revocation": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "rollback": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "actions",
+              "actor",
+              "scope",
+              "budget",
+              "revocation",
+              "rollback"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "authority_not_applicable_reason": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "usage": {
+        "type": "object",
+        "properties": {
+          "customer_promise": {
+            "type": "boolean",
+            "description": "Relied on as an established current operational capability promise; not a qualified experiment or conditional future milestone."
+          },
+          "production_dependency": {
+            "type": "boolean",
+            "description": "Relied on as an established operational capability; accepted uncertain experiments require a separate decision record."
+          },
+          "research_only": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "customer_promise",
+          "production_dependency",
+          "research_only"
+        ],
+        "additionalProperties": false
+      },
+      "classification_rationale": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "decision_history": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "at": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            "from_class": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                null,
+                "OBSERVED",
+                "DEMONSTRATED",
+                "PROPOSED",
+                "RESEARCH",
+                "SPECULATIVE",
+                "UNKNOWN"
+              ]
+            },
+            "to_class": {
+              "type": "string",
+              "enum": [
+                "OBSERVED",
+                "DEMONSTRATED",
+                "PROPOSED",
+                "RESEARCH",
+                "SPECULATIVE",
+                "UNKNOWN"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "uniqueItems": true
+            },
+            "decider": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "at",
+            "from_class",
+            "to_class",
+            "reason",
+            "evidence_ids",
+            "decider"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "schema_version",
+      "id",
+      "synthetic",
+      "statement",
+      "claim_class",
+      "truth_status",
+      "deployment_status",
+      "scope",
+      "owner",
+      "as_of",
+      "review_by",
+      "evidence_ids",
+      "conflicting_evidence_ids",
+      "limitations",
+      "verification",
+      "operational",
+      "authority",
+      "authority_not_applicable_reason",
+      "usage",
+      "classification_rationale",
+      "decision_history"
+    ],
+    "additionalProperties": false
+  },
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "properties": {
+        "system": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "environment": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "population": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "time_window": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "system",
+        "environment",
+        "version",
+        "population",
+        "time_window",
+        "conditions",
+        "exclusions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "minItems": 1
+}

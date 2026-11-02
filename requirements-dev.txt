@@ -1,0 +1,2 @@
+# Optional: the reference record checker itself has no dependencies.
+jsonschema[format]==4.26.0
