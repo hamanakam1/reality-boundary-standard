@@ -1,5 +1,12 @@
 # Change log
 
+## Initial source publication — 2026-11-01
+
+- Applied the owner's confirmed rights and approved CC-BY-4.0 prose / MIT software, schemas, synthetic JSON examples and configuration scope.
+- Included authentic license texts, attribution notices, machine-readable path annotations and contribution terms. Copied standard paragraphs retain their prose license in generated output.
+- Refreshed generated explorer attribution, publication metadata and source hashes; normative requirements, record schemas and checker policy remain unchanged.
+- Source publication is distinct from a tagged release, external certification, independent normative review or an adopter's conformance assessment.
+
 ## Unreleased repository foundation — 2026-11-01
 
 - Preserved standard 0.1.0-draft, all 118 requirement meanings/IDs, record schemas 0.1.0, and reference checker 0.1.1.

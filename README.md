@@ -75,6 +75,6 @@ The standard covers provenance, freshness, measurement, inference, research prom
 
 RBS is a proposed project standard. It does not claim standards-body recognition, external endorsement, or an authorized “RBS certified” badge. A checker pass is not a conformance assessment.
 
-This package targets [hamanakam1/reality-boundary-standard](https://github.com/hamanakam1/reality-boundary-standard). Publication and licensing state are recorded in [release-manifest.json](release-manifest.json); rights and license selection remain pending in [LICENSING.md](LICENSING.md). Public repository visibility alone grants no license.
+Source repository: [hamanakam1/reality-boundary-standard](https://github.com/hamanakam1/reality-boundary-standard). Copyright (c) 2026 Michael Hamanaka. The standard and prose use **CC BY 4.0**; reference software, schemas, synthetic JSON examples and configuration use **MIT**. Copied standard paragraphs in generated output retain their prose license. See [LICENSING.md](LICENSING.md), [NOTICE.md](NOTICE.md), and [release-manifest.json](release-manifest.json) for scope and publication records.
 
 Use [CONTRIBUTING.md](CONTRIBUTING.md) for corrections, proposals, and adoption reports; [GOVERNANCE.md](GOVERNANCE.md) for decisions and versioning; and the [roadmap](ROADMAP.md) for the path toward a stable standard. Private engagement material and original speculative narratives stay outside this repository.

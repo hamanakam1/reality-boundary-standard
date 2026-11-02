@@ -1,26 +1,26 @@
-# GitHub publication plan
+# Source publication and release procedure
 
 ## Current destination — 1 November 2026
 
 The owner supplied `https://github.com/hamanakam1/reality-boundary-standard` as the destination. Repository metadata confirms account `hamanakam1`, public visibility, administrative write permission for the authenticated session, and an empty repository at inspection. The new foundation is prepared in a clean local clone without importing the preparation workspace's Git history.
 
-The repository owner is the initial decision contact through GitHub issues and pull requests after publication. The remaining owner input is confirmation of rights and the selected license scope. No public branch, tag, or release has been published by this local preparation. The live source of candidate state is [release-manifest.json](../release-manifest.json) and current verification is [VERIFICATION.md](VERIFICATION.md).
+The repository owner is the initial decision contact through GitHub issues and pull requests. The owner confirmed control of the draft's rights and approved initial source publication with CC-BY-4.0 for prose and MIT for software/supporting records on 1 November 2026 (America/Los_Angeles). [LICENSING.md](../LICENSING.md) defines the exact scope and contribution terms.
 
-The sections below retain the publication procedure; their original proposed inputs are superseded by the confirmed destination and contact above where applicable.
+The target branch is `main`. Publication is verified by reading back the exact remote commit and file contents after the push. The source manifest records the initial published revision once observed; a revision cannot contain its own Git commit hash. Exact current-head delivery receipts and CI results are therefore captured after publication. A tagged release and hosted website are separate actions from publishing source.
 
 ## Concrete release candidate
 
-- Proposed repository name: `reality-boundary-standard`.
-- Proposed visibility: public.
+- Repository: `hamanakam1/reality-boundary-standard`.
+- Visibility: public.
 - Initial version: `0.1.0-draft`.
 - Release purpose: public review and initial adoption feedback.
 - Normative source: `standard/STANDARD.md`.
 - Conformance status of a product: not assessed by publishing this repository.
 - Repository owner: `hamanakam1`.
 - Initial decision contact: repository owner, through repository issues/pull requests; no additional maintainers appointed.
-- License and rights holder: decision pending; see `../LICENSING.md`.
+- Rights holder: Michael Hamanaka; license scope: CC-BY-4.0 prose / MIT software and supporting records, with mixed generated output retaining both scopes.
 
-These are the remaining publication inputs, not reasons to stop preparing or reviewing the content. Resolve them against the actual authenticated GitHub account and the owner's instruction before creating or pushing a public remote. Do not guess an organization or grant a license on its behalf.
+The initial publication inputs are resolved. Future publications still require authority over their destination, content and rights; this approval does not extend rights over new third-party submissions.
 
 ## Public-content boundary
 

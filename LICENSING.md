@@ -1,17 +1,28 @@
-# License decision before publication
+# Licensing and attribution
 
-This preparation package does not make a license grant on behalf of its future publisher. Record the rights holder and selected license before the initial public release.
+Copyright (c) 2026 Michael Hamanaka. The repository owner confirmed ownership and approved this license split for initial publication on 1 November 2026 (America/Los_Angeles).
 
-Proposed direction for the owner to review: an explicit reusable license for the standard and templates, and a suitable open-source license for the reference implementation. A documentation license and a software license need not be the same. Assess attribution, modification, redistribution, patent implications where relevant, contributor rights, and whether one license or a clearly scoped split best serves the project.
+The standard and prose are licensed under **Creative Commons Attribution 4.0 International**, SPDX identifier `CC-BY-4.0`. Reference software and supporting machine-readable material are licensed under the **MIT License**, SPDX identifier `MIT`. This is a division by material, not a choice between two licenses for the same material.
 
-After the decision, add the authentic license text(s), SPDX identifiers where applicable, scope of each license, notices, and the contribution policy. Do not invent a license name, paraphrase legal terms as a substitute for the actual license, or infer rights over third-party/private material from public repository visibility.
+| Material | Applicable license |
+|---|---|
+| Normative standard, conformance procedure, Markdown documentation, governance, prompts and templates | CC-BY-4.0 |
+| Python tools/tests, HTML explorer template/layout/scripts, workflow/configuration files | MIT |
+| Claim/evidence JSON schemas and synthetic JSON examples | MIT |
+| File/release/verification metadata | MIT |
+| Standard paragraphs copied into `standard/requirements.json` and `docs/explorer.html` | CC-BY-4.0 |
+| Generator metadata and explorer software within those generated files | MIT |
 
-The release manifest must retain LICENSE_DECISION_PENDING until these fields are resolved. This is a publication input; it does not block reviewing or improving the draft in the owner's workspace.
+The generated catalog and explorer therefore contain both kinds of material; their combined SPDX expression is `CC-BY-4.0 AND MIT`. Reusing standard paragraphs retains their prose license. Reusing the explorer implementation retains its software license. [REUSE.toml](REUSE.toml) supplies machine-readable path annotations.
 
-The target repository owner is now confirmed as `hamanakam1`; that observation does not resolve copyright ownership or select a license. The completed source candidate remains local while the rights holder and license are confirmed. No license text or contribution grant has been applied by the repository tooling.
+The authentic license texts are [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt) and [LICENSES/MIT.txt](LICENSES/MIT.txt). [LICENSE](LICENSE) identifies the scope, and [NOTICE.md](NOTICE.md) supplies project attribution. These scope notes do not replace the license texts.
 
-## Concrete proposal for owner review
+## Attribution and third-party material
 
-The pending proposal is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) for the standard and prose documentation/templates, and [MIT](https://opensource.org/license/mit) for reference software, record schemas, synthetic JSON examples and workflow/configuration files. The generated requirement catalog and explorer retain CC BY 4.0 treatment for copied standard paragraphs; the explorer's software/layout would be MIT. Third-party references retain their own rights.
+Identify the Reality Boundary Standard, Michael Hamanaka, the source repository, and the version used when attributing the standard. Preserve applicable notices and indicate changes as required by the license. References to external sources do not relicense those works or imply endorsement; third-party material retains its own rights.
 
-This is a proposal, not an effective license grant. The owner must confirm control of the included material's rights and approve the scope before authentic license texts, attribution notices and the contribution grant are applied and the candidate is published. A different license choice can be substituted before that step.
+Historical preparation records that describe a pending license retain their dated historical meaning. This document and the approved license texts state the initial publication's licensing terms.
+
+## Contributions
+
+Contributors retain copyright in their contributions. Contributions intended for inclusion must be offered under the license applicable to the affected material, with authority to do so and any third-party rights identified. Generated changes must preserve the license boundary between standard paragraphs and software. See [CONTRIBUTING.md](CONTRIBUTING.md).

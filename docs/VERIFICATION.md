@@ -15,6 +15,7 @@ Scope: the local repository foundation for RBS 0.1.0-draft. This records source/
 | Explorer interaction smoke | PASS: 11 jsdom checks | Search, multi-term matching, filters, selection, reset, keyboard shortcuts, empty state and malformed fragments; simulated DOM, not browser rendering |
 | Workflow and issue forms | PASS: YAML syntax parsed | Workflow configured; no remote run claimed |
 | Source package | PASS: strict JSON, inline relative Markdown targets/heading anchors and exact file hashes | Does not crawl external links or establish rights |
+| Licensing metadata | PASS: approved scope, authentic texts, attribution, contribution terms and REUSE annotation lint | Owner-confirmed rights; notice validation is not an independent rights audit |
 | Bounded public-content scan | No matches | Known private-engagement terms, private preparation paths, provider-document IDs and credential markers; not an exhaustive privacy, secret or authorship audit |
 
 ## Review findings and dispositions
@@ -31,8 +32,8 @@ This is an implementation self-review and local tool verification. It is not ind
 
 ## Publication and remaining checks
 
-The target public repository and owner are confirmed. This candidate has not been pushed; no tag, release, GitHub CI pass, adoption result or conformance certificate is asserted. The remaining owner decision is confirmation of rights and license selection/scope, as recorded in [LICENSING.md](../LICENSING.md) and [release-manifest.json](../release-manifest.json).
+The target repository and owner are confirmed. The owner approved rights, the CC-BY-4.0 prose / MIT software scope, and initial publication on 1 November 2026 (America/Los_Angeles). License texts, attribution, generated-output notices and contribution terms are included; see [LICENSING.md](../LICENSING.md). These are local verification results. Actual publication and remote CI results are read back after the push and recorded separately; no tag, release, adoption result or conformance certificate follows from these checks.
 
 The browser access host was unavailable. Visual browser rendering, responsive layout and native browser acceptance of the explorer were **NOT_RUN**. Simulated DOM checks do not substitute for those checks.
 
-After licensing is resolved, refresh license notices, contribution terms, publication metadata and file hashes; verify the exact candidate; publish only the intended tree; then read back the remote commit, key files and actual CI results. A tagged release is a separate action from the initial source publication.
+The licensed candidate is checked with refreshed generated output and file hashes before publication. Read back the exact remote commit, key files and actual CI results after publication. A tagged release is a separate action from the initial source publication.

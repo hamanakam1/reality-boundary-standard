@@ -1,0 +1,22 @@
+Reality Boundary Standard
+Copyright (c) 2026 Michael Hamanaka
+
+This repository uses licenses by material:
+
+* CC-BY-4.0: the normative standard, conformance procedure, Markdown prose,
+  governance, prompts, templates, and copied standard paragraphs in generated
+  requirement catalogs and explorer pages.
+* MIT: reference software, tests, explorer layout/scripts, record schemas,
+  synthetic JSON examples, workflow/configuration files, and supporting metadata.
+
+Generated standard/requirements.json and docs/explorer.html contain both prose
+and implementation/metadata. Their combined SPDX expression is:
+CC-BY-4.0 AND MIT
+
+This is a scope split, not a dual-license choice for the same material.
+Third-party material retains its own rights.
+
+Full texts: LICENSES/CC-BY-4.0.txt and LICENSES/MIT.txt
+Scope and contribution terms: LICENSING.md
+Attribution: NOTICE.md
+Machine-readable path annotations: REUSE.toml

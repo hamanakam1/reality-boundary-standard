@@ -1,2 +1,4 @@
 # Markdown uses two trailing spaces for intentional hard line breaks.
 *.md whitespace=-blank-at-eol
+# Preserve the authoritative license text's terminal blank lines.
+LICENSES/*.txt whitespace=-blank-at-eof

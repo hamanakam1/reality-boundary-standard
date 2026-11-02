@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-02T02:09:24.266490+00:00",
-  "candidate_revision": "2026-11-01-repository-foundation",
+  "checked_at": "2026-11-02T02:37:57.840111+00:00",
+  "candidate_revision": "2026-11-01-owner-approved-publication",
   "standard_version": "0.1.0-draft",
   "record_schema_version": "0.1.0",
   "validator_version": "0.1.1",
@@ -70,8 +70,20 @@
     ]
   },
   "github_ci": "NOT_RUN",
-  "publication_status": "LOCAL_CANDIDATE_NOT_PUSHED",
-  "rights_and_license": "LICENSE_DECISION_PENDING",
+  "publication_status": "OWNER_AUTHORIZED",
+  "rights_and_license": "OWNER_APPROVED",
   "full_conformance": "NOT_ASSESSED",
-  "review": "Implementation self-review and local checks; no independent normative review claimed"
+  "review": "Implementation self-review and local checks; no independent normative review claimed",
+  "license_scope": {
+    "prose": "CC-BY-4.0",
+    "software": "MIT",
+    "generated_mixed_material": "CC-BY-4.0 AND MIT"
+  },
+  "licensing_verification": {
+    "copyright_holder": "Michael Hamanaka",
+    "owner_confirmation": "APPROVED",
+    "license_texts": "Present; authenticated source bytes verified before use; MIT copyright placeholders filled",
+    "reuse_license_annotation_lint": "PASS",
+    "limits": "License notices and scope checks; not an independent rights audit"
+  }
 }

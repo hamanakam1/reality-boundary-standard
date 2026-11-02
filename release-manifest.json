@@ -10,21 +10,19 @@
     "observed_url": "https://github.com/hamanakam1/reality-boundary-standard",
     "published_commit": null,
     "observed_visibility": "public",
-    "observed_empty_on": "2026-11-01"
+    "observed_empty_on": "2026-11-01",
+    "target_branch": "main"
   },
   "maintainers": [],
-  "license_status": "LICENSE_DECISION_PENDING",
-  "publication_status": "LOCAL_CANDIDATE_NOT_PUSHED",
+  "license_status": "OWNER_APPROVED",
+  "publication_status": "OWNER_AUTHORIZED",
   "full_conformance": "NOT_ASSESSED",
   "synthetic_examples": true,
   "private_engagement_artifacts_included": false,
   "verification_report": "docs/VERIFICATION.md",
-  "pending_publication_inputs": [
-    "rights holder confirmation",
-    "license selection and scope"
-  ],
+  "pending_publication_inputs": [],
   "file_hash_manifest": "FILE_MANIFEST.json",
-  "candidate_revision": "2026-11-01-repository-foundation",
+  "candidate_revision": "2026-11-01-owner-approved-publication",
   "validator_version": "0.1.1",
   "verified_on": "2026-11-01",
   "initial_contact": {
@@ -32,6 +30,16 @@
     "role": "repository owner; no additional maintainers appointed",
     "route": "repository issues and pull requests after publication"
   },
-  "rights_holder": null,
-  "record_schema_version": "0.1.0"
+  "rights_holder": "Michael Hamanaka",
+  "record_schema_version": "0.1.0",
+  "license_scope": {
+    "prose": "CC-BY-4.0",
+    "software_schemas_synthetic_json_and_configuration": "MIT",
+    "generated_catalog_and_explorer": "CC-BY-4.0 AND MIT"
+  },
+  "rights_and_license_confirmation": {
+    "decision": "Owner confirmed the proposed rights and license split and authorized publication",
+    "date": "2026-11-01",
+    "timezone": "America/Los_Angeles"
+  }
 }
