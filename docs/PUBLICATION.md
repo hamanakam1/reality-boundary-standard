@@ -8,6 +8,12 @@ The repository owner is the initial decision contact through GitHub issues and p
 
 The target branch is `main`. Publication is verified by reading back the exact remote commit and file contents after the push. The source manifest records the initial published revision once observed; a revision cannot contain its own Git commit hash. Exact current-head delivery receipts and CI results are therefore captured after publication. A tagged release and hosted website are separate actions from publishing source.
 
+## Initial publication observed
+
+The first licensed source revision is [305c2ae](https://github.com/hamanakam1/reality-boundary-standard/commit/305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648). All three jobs in its [verification workflow](https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015) completed successfully. Its downloaded GitHub source archive matched all 56 source files and the file manifest. [PUBLICATION_RECEIPT.json](PUBLICATION_RECEIPT.json) records that evidence, including scope and limitations.
+
+That receipt establishes the initial revision's publication and CI result. Later commits, including the commit adding the receipt itself, require their own exact-commit checks. Repository source publication does not establish an adopter's conformance or a tagged release.
+
 ## Concrete release candidate
 
 - Repository: `hamanakam1/reality-boundary-standard`.

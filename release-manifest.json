@@ -8,14 +8,15 @@
     "owner": "hamanakam1",
     "proposed_visibility": "public",
     "observed_url": "https://github.com/hamanakam1/reality-boundary-standard",
-    "published_commit": null,
     "observed_visibility": "public",
     "observed_empty_on": "2026-11-01",
-    "target_branch": "main"
+    "target_branch": "main",
+    "initial_published_commit": "305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+    "current_revision_source": "refs/heads/main; exact current-head receipt is captured after publication"
   },
   "maintainers": [],
   "license_status": "OWNER_APPROVED",
-  "publication_status": "OWNER_AUTHORIZED",
+  "publication_status": "SOURCE_PUBLISHED",
   "full_conformance": "NOT_ASSESSED",
   "synthetic_examples": true,
   "private_engagement_artifacts_included": false,
@@ -41,5 +42,6 @@
     "decision": "Owner confirmed the proposed rights and license split and authorized publication",
     "date": "2026-11-01",
     "timezone": "America/Los_Angeles"
-  }
+  },
+  "publication_receipt": "docs/PUBLICATION_RECEIPT.json"
 }

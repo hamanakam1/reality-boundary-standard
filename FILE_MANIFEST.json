@@ -134,8 +134,13 @@
     },
     {
       "path": "docs/PUBLICATION.md",
-      "bytes": 5531,
-      "sha256": "ae8418fb10852cb0ac0bbde1745849e710ffbb46cdfeb6135490f3b2f2e8b9fb"
+      "bytes": 6341,
+      "sha256": "772fe6f15b21d7c04547808bbb2f448a3d3094cc1e3076d25b3085805117fd30"
+    },
+    {
+      "path": "docs/PUBLICATION_RECEIPT.json",
+      "bytes": 2208,
+      "sha256": "5af677fdad2bbcc54cb5bb60f4348de038369f03595571a1004a6437d8fdcc80"
     },
     {
       "path": "docs/VALIDATOR.md",
@@ -144,13 +149,13 @@
     },
     {
       "path": "docs/VERIFICATION.json",
-      "bytes": 2787,
-      "sha256": "8a3edd4fb09a75112113845997a4abed36c223d617bc5549d5fd657e151a9241"
+      "bytes": 3164,
+      "sha256": "348d7e03d665d10102dd7884318e538a7c31bedaad856e00668f597cee0ab112"
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 5112,
-      "sha256": "06c87c7a464742ec17715fa266efa41e8874ad08c7f16fc8c212e4449ad5fa7d"
+      "bytes": 5539,
+      "sha256": "21630142d2d2a458aa704dc29c45c78fb8a6c3d7b8c4a279fd6a6322ca4d1ada"
     },
     {
       "path": "docs/explorer.html",
@@ -179,8 +184,8 @@
     },
     {
       "path": "release-manifest.json",
-      "bytes": 1606,
-      "sha256": "cf8064354e34b3913415b343a1723f294f15bfb706da1337bdd6a2a963dfefe1"
+      "bytes": 1818,
+      "sha256": "34b5bca0643618f64b5152e50c2cb946857619cf143362a2937e549075b0da6a"
     },
     {
       "path": "requirements-dev.txt",

@@ -1,0 +1,55 @@
+{
+  "observed_at": "2026-11-02T02:40:41.032122+00:00",
+  "repository": "https://github.com/hamanakam1/reality-boundary-standard",
+  "visibility": "public",
+  "default_branch": "main",
+  "initial_published_commit": "305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+  "commit_url": "https://github.com/hamanakam1/reality-boundary-standard/commit/305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+  "source_readback": {
+    "checked_at": "2026-11-02T02:40:12.481843+00:00",
+    "commit": "305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+    "source_files": 56,
+    "downloaded_archive_sha256": "e450f55dbb1d4a3ece4795db4abb41b40a84cf9b735a3f164aec98a45b74d38c",
+    "remote_source_bytes_match_local": "PASS",
+    "remote_file_manifest": "PASS",
+    "unpacked_repository_checks": "PASS"
+  },
+  "verification_workflow": {
+    "databaseId": 41378853015,
+    "headSha": "305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015"
+  },
+  "jobs": [
+    {
+      "name": "Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015/job/125064990220"
+    },
+    {
+      "name": "Python 3.10",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015/job/125064990303"
+    },
+    {
+      "name": "Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015/job/125064990396"
+    }
+  ],
+  "rights_holder": "Michael Hamanaka",
+  "license_scope": {
+    "prose": "CC-BY-4.0",
+    "software_schemas_examples_configuration": "MIT",
+    "generated_mixed_material": "CC-BY-4.0 AND MIT"
+  },
+  "normative_requirement_count": 118,
+  "full_conformance": "NOT_ASSESSED",
+  "scope": "Initial source publication. This receipt is committed afterward; it does not assert CI for its own containing revision or later branch heads.",
+  "browser_visual_review": "NOT_RUN",
+  "tagged_release": "NOT_CREATED"
+}

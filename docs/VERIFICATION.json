@@ -69,8 +69,13 @@
       "tests/test_validate_records.py"
     ]
   },
-  "github_ci": "NOT_RUN",
-  "publication_status": "OWNER_AUTHORIZED",
+  "github_ci": {
+    "initial_publication_commit": "305c2ae3e94ef6b2b0ea3c42159cb79d3cb44648",
+    "status": "PASS",
+    "url": "https://github.com/hamanakam1/reality-boundary-standard/actions/runs/41378853015",
+    "current_head_scope": "See exact-commit workflow runs; initial receipt does not assert results for later revisions"
+  },
+  "publication_status": "SOURCE_PUBLISHED",
   "rights_and_license": "OWNER_APPROVED",
   "full_conformance": "NOT_ASSESSED",
   "review": "Implementation self-review and local checks; no independent normative review claimed",
@@ -85,5 +90,6 @@
     "license_texts": "Present; authenticated source bytes verified before use; MIT copyright placeholders filled",
     "reuse_license_annotation_lint": "PASS",
     "limits": "License notices and scope checks; not an independent rights audit"
-  }
+  },
+  "initial_publication_receipt": "docs/PUBLICATION_RECEIPT.json"
 }
